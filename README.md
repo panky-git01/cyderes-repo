@@ -71,6 +71,7 @@ In this solution, Logstash ingests log data from the standard input (stdin). Eac
 <br>
 <br>
 Summary:
+<br>
 This config:
 1. Ingests raw logs via the terminal.
 2. Parses syslog messages with a fixed format.
