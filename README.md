@@ -9,7 +9,7 @@ Prerequisites:
 4. Installed latest version of Java on my windows machine. Current version is using bundled JDK.
 <br>
 <br>
-# Logstash Configuration File:
+Logstash Configuration File:
 <br>
 <br>
 input {
@@ -61,6 +61,7 @@ output {
 }
 <br>
 <br>
+<br>
 Explanation of logstash configuration file:
 <br>
 <br>
@@ -74,6 +75,7 @@ In this solution, Logstash ingests log data from the standard input (stdin). Eac
 <br>
 <br>
 Summary
+<br>
 <br>
 This config:
 1. Ingests raw logs via the terminal.
