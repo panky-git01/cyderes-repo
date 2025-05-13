@@ -9,7 +9,7 @@ Prerequisites:
 4. Installed latest version of Java on my windows machine. Current version is using bundled JDK.
 <br>
 <br>
-Logstash Configuration File
+# Logstash Configuration File
 <br>
 <br>
 input {
@@ -61,19 +61,19 @@ output {
 }
 <br>
 <br>
-Explanation of logstash configuration file:
+# Explanation of logstash configuration file:
 <br>
 <br>
 This Logstash configuration defines a simple pipeline for ingesting, processing, and outputting log data. Here's a short description of the data flow:
 <br>
 <br>
- # Data Ingestion and Output in Logstash
+Data Ingestion and Output in Logstash
 <br>
 <br>
 In this solution, Logstash ingests log data from the standard input (stdin). Each incoming log message is parsed using a grok filter to extract structured fields from a syslog-style message format. The mutate filters are then used to convert the severity field to an integer, rename several fields for consistency, and organize them under a new nested structure called normalized. After the transformation, unnecessary original fields are removed to streamline the output. Finally, the processed data is output to the standard output (stdout) using the rubydebug codec, which formats the output in a readable, structured format for debugging or inspection.
 <br>
 <br>
- Summary
+Summary
 <br>
 This config:
 1. Ingests raw logs via the terminal.
