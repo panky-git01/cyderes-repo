@@ -9,7 +9,7 @@ Prerequisites:
 4. Installed latest version of Java on my windows machine. Current version is using bundled JDK.
 <br>
 <br>
-# Logstash Configuration File
+# Logstash Configuration File:
 <br>
 <br>
 input {
@@ -61,7 +61,7 @@ output {
 }
 <br>
 <br>
-# Explanation of logstash configuration file:
+Explanation of logstash configuration file:
 <br>
 <br>
 This Logstash configuration defines a simple pipeline for ingesting, processing, and outputting log data. Here's a short description of the data flow:
