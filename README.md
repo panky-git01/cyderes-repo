@@ -73,7 +73,7 @@ This Logstash configuration defines a simple pipeline for ingesting, processing,
 In this solution, Logstash ingests log data from the standard input (stdin). Each incoming log message is parsed using a grok filter to extract structured fields from a syslog-style message format. The mutate filters are then used to convert the severity field to an integer, rename several fields for consistency, and organize them under a new nested structure called normalized. After the transformation, unnecessary original fields are removed to streamline the output. Finally, the processed data is output to the standard output (stdout) using the rubydebug codec, which formats the output in a readable, structured format for debugging or inspection.
 <br>
 <br>
- # Summary
+ Summary
 <br>
 This config:
 1. Ingests raw logs via the terminal.
@@ -82,13 +82,14 @@ This config:
 4. Prints the result for inspection.
 <br>
 <br>
- # OUTPUT:
+ OUTPUT:
 <br>
 <br>
 ![image](https://github.com/user-attachments/assets/076d48c8-81ab-47f0-a73f-687052dbc535)
 <br>
 <br>
- # Additional OUTPUT Considerations:
+ Additional OUTPUT Considerations:
+<br>
 <br>
 Since, this sample log data is unique and if alignments of fields like hostname, ipaddress, dest ip, dest address change then above normalized parser will not work. So, in order to make the above parser to work for all log types, we need some samples of all types of logs so as to compare with the log data which is in production phase and to make changes in the parser accordingly. 
 
